@@ -1,4 +1,16 @@
 config:
- name: sh
- age: 18
- version: 10
+  name: sh
+  age: 18
+  version: 10
+  redis:
+    host: 10.127.33.21
+    port: 7110
+    cluster:
+      nodes: 10.127.33.21:7110,10.127.33.21:7111,10.127.33.21:7112,10.127.33.21:7113,10.127.33.21:7114,10.127.33.21:7115
+      maxRedirects: 6
+    jedis:
+      pool:
+        maxActive: 100
+        maxWait: -1
+        maxIdle: 8
+        minIdle: -1
