@@ -8,9 +8,8 @@ config:
     cluster:
       nodes: 106.14.205.48:7000,106.14.205.48:7001,106.14.205.48:7002,106.14.205.48:7003,106.14.205.48:7004,106.14.205.48:7005
       maxRedirects: 6
-    jedis:
-      pool:
-        maxActive: 1000
-        maxWait: -1
-        maxIdle: 500
-        minIdle: -1
+    pool:
+      maxActive: 1000
+      maxWait: -1
+      maxIdle: 500
+      minIdle: -1
